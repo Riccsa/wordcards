@@ -1,0 +1,369 @@
+header{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color: #F7F9D7;
+    
+    
+}
+
+#logincontainer,#registercontainer,#validationcontainer{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    position:relative;
+    right: -570px;
+    bottom: -200px;
+    margin-right:60%;
+    padding:0;
+    font-size: 14px;  
+}
+
+
+input {
+    align-self: center;
+    width: 60%;
+    height: 25px;
+    border-style: groove;
+    border-width: 2px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  }
+
+  #loginbtncontainer, #registerBtnContainer{
+      margin-top: 40px;
+      vertical-align: text-bottom;
+      display:inline-flex;
+      position: relative;
+      right:-40px;
+      color:white;
+  }
+
+ #registercontainer{
+     margin-top:-100px;
+ }
+
+  #btnLogin, #btnRegOnLog,#btnRegOnReg,#btnBackOnReg{
+      position: relative;
+      left:-31px;
+      background-color:#389FEE;
+      padding:10px;
+      cursor:pointer;
+      
+  }
+
+  #btnLogin{
+    margin-right: 30px;  
+    padding-left:50px;
+    padding-right:50px;
+}
+
+#btnRegOnLog{
+    margin-left:30px; 
+    padding:10px;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+#btnRegOnReg{
+    margin-right: 30px;  
+    padding-left:50px;
+    padding-right:50px;
+}
+
+#btnBackOnReg{
+
+    padding-left:50px;
+    padding-right:50px;
+}
+
+
+#btnRegOnReg{
+    padding-left:30px;
+    padding-right:30px;
+   
+}
+  #btnLogin:hover,#btnRegOnLog:hover,#btnRegOnReg:hover,#btnBackOnReg:hover{
+
+   background-color:#18629b; 
+}
+
+#rightArrow{
+    background-color: #389FEE;
+    height: 25px;
+    position: relative;
+    top:7px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    cursor: pointer;
+}
+
+#validationcontainer{
+    animation: mymove 2s;
+}
+
+@keyframes mymove{
+
+    from{right:0px;}
+    to{right:-570px;}
+
+}
+
+#language{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#userContainer{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn{
+    width: 150px;
+    height: 50px;
+    margin:10px;
+    background-color:brown;
+    border-style: none;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color:white;
+    transition: 0.5s;
+
+}
+
+.btn:hover{
+   
+   width:175px;
+   height: 58px;
+   transition: 0.5s;
+ 
+}
+
+.btn::before{
+    width: 150px;
+    height: 50px;
+    transition: 0.5s;
+
+}
+.btn:hover::before{
+   
+    width:150px;
+    height: 50px;
+    transition: 0.5s;
+  
+ }
+
+#userNavBar,#languageNavBar{
+    text-align: left;
+    margin: 10px;
+    padding-bottom:10px;
+    width: 100px;
+    border-bottom-left-radius: 0.4cm;
+    border-bottom-right-radius: 0.4cm;
+    border-top-left-radius: 0.4cm;
+    border-top-right-radius: 0.4cm;
+    color:white;
+    background-color:brown;
+}
+
+#languageNavBar{
+    display: inline-table;
+}
+#userNavBar{
+    display: inline-table;
+}
+.navBarContainer{
+    position: absolute;
+    left:1100px;
+    bottom:500px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+li{
+    margin: 4px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+li:hover{
+    font-size:18px;
+    transition: 0.4s;
+    
+}
+
+.themeContainer{
+    margin: 0px;
+    padding:0px;
+    width: 30%;
+    position: relative;
+    top:200px;
+    left:500px;
+    display: grid;
+}
+
+
+
+.themeBtn{
+    display: inline-table;
+    position: relative;
+    margin-left: 20px;
+    top:17px;
+    cursor:pointer;
+    transition: 0.4s;
+    width: 50px;
+}
+
+.plusBtn{
+    cursor:pointer;
+    transition: 0.4s;
+    width: 50px;
+    position: relative;
+    margin-top: 0px;
+    left: 192px;
+}
+
+.themeBtn:hover,.plusBtn:hover{
+    width: 55px; 
+    transition: 0.4s;    
+}
+.txTheme{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px;
+    padding:0px;
+}
+
+
+.card{
+    border-style: solid;
+    border-width: 1px;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+
+}
+.meaning{
+    margin-top:10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    width: 50%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.cardContainer{
+    margin-top: 100px;
+    position: relative;
+    left: 300px ;
+    width:60%;
+    height: auto;    
+}
+
+
+
+.cardColumn{
+    float: left;
+    margin:10px;
+    width:200px;
+    background-color: teal;
+    height: auto;
+    cursor: pointer;
+}
+
+
+.cardRow::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.trainingCardContainer{
+      position: relative;
+      left: 600px;
+      width:320px;
+      margin-bottom: 0px;
+      top:-50px;
+
+  }
+
+  .trainingCard{
+    border-style: solid;
+    border-width: 1px;
+    width: 320px;
+    height: 320px;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.leftArrow{
+    position: relative;
+    top:-200px;
+    left:-200px;
+    cursor: pointer;
+}
+
+.rightArrow{
+    position: relative;
+    top:-200px;
+    right:-375px;
+    cursor: pointer;
+}
+
+.imgVisible{
+    margin-top:25px;
+    cursor: pointer;
+}
+
+.backArrow{
+    align-self: left;
+    position: absolute;
+    right: 700px;
+    cursor: pointer;
+    width: 64px;
+    transition: 0.4s;
+}
+
+.alert{
+    margin:10px;
+    padding: 10px;
+    width: 35%;
+    position: relative;
+    left: 40px;
+    top: 20px;
+    color: red;
+    background-color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

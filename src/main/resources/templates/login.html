@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Szótanuló kártya</title>
+    <meta charset="UTF-8" />
+    <link href="/css/style.css" rel="stylesheet" /> 
+     <!-- Required meta tags -->
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   </head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+
+<body>
+    <header>
+        <h1>
+            Üdvözöllek a szótanuló oldalán !
+        </h1>
+    </header>
+    <form th:action="@{/index}" th:object="${user}" method="post" id="logincontainer">
+        <div id="loginfields">
+            <h3> Felhasználónév</h3> <input type="text" name="email"  th:field="${user.email}"  />
+            <h3> Jelszó </h3><input type="password" name="password" th:field="${user.password}"  />
+        </div>
+ 		<div class="alert" th:if="${param.error}">Hibás felhasználónév vagy jelszó</div>
+        <div id="loginbtncontainer">
+            <button id="btnLogin" type="submit" >Belépés </button>
+            <button id="btnRegOnLog">Regisztráció</button>
+        </div>
+    </form>
+</body>
+
+
+</html>
